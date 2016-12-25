@@ -1,0 +1,106 @@
+.uv-bubble-background{
+	fill: rgba(46, 49, 51, 0.9) !important;
+}
+
+.onboardingpin{
+	position:absolute; 
+	z-index:2001;
+}
+
+.onboardingpin__wrapper{
+	position:relative; 
+}
+
+.onboardingpin__pin{
+	position: absolute;
+	width:30px;
+	height:30px; 
+
+	border-radius:50px; 
+	top:-15px; 
+	left:-15px;
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2); 
+	
+    border: 3px solid #999;
+    animation: pulsate 1s ease-out;
+    animation-iteration-count: infinite;
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity:0;
+}
+
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@keyframes pulsate {    	
+    0% {transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+.onboardingpin__bubble{
+	position: absolute;	
+	display: none;
+	width:360px; 
+	background-color:white; 
+	border-radius:5px; 
+	top:25px; 
+	left:-15px; 
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+	opacity: 0;
+}
+
+.onboardingpin_opened .onboardingpin__bubble{
+	display: block;
+}
+
+.onboardingpin_opened .onboardingpin__pin{
+	background-color: #eee;
+	pointer-events: none;
+}
+
+.onboardingpin__msg{
+	color:#000;
+	font-size: 16px;
+	padding: 20px;
+	white-space:normal;
+	line-height: 1.45;
+	text-align: left;	
+}
+
+.onboardingpin__title{
+	display: block;
+	font-weight: 600;
+	padding-bottom:10px;
+}
+
+.onboardingpin__btn-close{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	width:80px;
+	height:35px;
+	line-height: 35px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	margin-left: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	border-radius: 5px;
+}
+
+.onboardingpin__filter{
+	position: fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100vh;
+	background-color: #fff;
+	opacity: 0.8;
+	cursor: default;
+	z-index: 2000;
+}

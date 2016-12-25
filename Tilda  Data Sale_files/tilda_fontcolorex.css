@@ -1,0 +1,60 @@
+                .colorpicker-2x {
+                    position: relative;
+                    width: 270px;
+                    height: 235px;
+                }
+                .colorpicker-2x .colorpicker-saturation {
+                    width: 200px;
+                    height: 200px;
+                }
+                .colorpicker-2x .colorpicker-hue,
+                .colorpicker-2x .colorpicker-alpha {
+                    width: 30px;
+                    height: 200px;
+                }
+                .colorpicker-2x .colorpicker-color,
+                .colorpicker-2x .colorpicker-color div{
+                    height: 30px;
+                }
+                
+                .colorpicker-element {
+                    font-size: 16px;
+                }
+                
+                .colorpicker-right:before {
+                    display: none !important;
+                }
+                .colorpicker-right:after {
+                    display: none !important;
+                }
+                
+                #redaktor-model-fontcolorex {
+                    position: relative !important;
+                    min-height: 240px;
+                    overflow: hidden;
+                    margin: 0px;
+                    padding-bottom: 30px !important;
+                }
+                
+                #redaktor-model-fontcolorex .colorpicker-element {
+                    line-height: 18px !important;
+                    font-size: 14px !important;
+                    box-sizing: border-box;
+                    width: 272px !important;
+                    margin-left: 4px !important;
+                    padding: 10px 10px !important;
+                    height: 33px !important;
+                    box-shadow: none !important;
+                    margin-top: 15px !important;
+                    border: 1px solid #e5e5e5 !important;
+                    
+                }
+                
+                #redaktor-model-fontcolorex .dropdown-menu{
+	                border:0px solid #eee !important;
+	                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1)
+                }
+
+                #redaktor-model-fontcolorex .colorpicker{
+	                border-radius: 0px !important;
+                }
